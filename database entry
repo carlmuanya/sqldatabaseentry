@@ -1,0 +1,21 @@
+create table students (
+	id int not null auto_increment primary key,
+	firstname varchar() not null;
+	lastname varchar() not null
+);
+
+insert into students (id, firstname, lastname) values (1,"John","Doe");
+
+----->
+
+CREATE INSERT UPDATE DELETE CIUD
+
+<?php //registration_process page
+	$firstname = "John";
+	$lastname = "Doe";
+	$resource = mysql_query("")
+	$row = mysqli_fetch_assoc($resource);
+	$last_id = $row["max_id"];
+	$new_id = $last_id + 1; 
+
+	mysqli_query("insert into students (id, firstname, lastname) values ($id )")
